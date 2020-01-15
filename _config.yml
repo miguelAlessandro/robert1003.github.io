@@ -18,19 +18,58 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Blog
+title: A Simple Blog
+author: robert1003
+markdown: CommonMarkGhPages
 email: robert881003@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Testing 1 2 3
+  A blog for new year resolution.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: twitter123
+#twitter_username: twitter123
 github_username:  robert1003
+show_excerpts: false # set to true to show excerpts on the homepage
+
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    # twitter: jekyllrb
+    github:  robert1003
+    # rss: rss
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - about.md
 
 # Build settings
 theme: minima
+
 plugins:
-  - jekyll-feed
+ - jekyll-feed
+ - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
