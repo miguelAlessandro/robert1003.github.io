@@ -82,7 +82,19 @@ First observe that if $A$ can see $B$, then we must kill $A$ before we kill $B$.
 
 ## pG <span style="font-size:medium;">[-\-:-\-], 0 try</span>
 
+First observe that the $i^{th}$ patient will be alive after taking the food if $x - \sum_{k=1}^{i}a_i \le b_i$. Moving $x$ to another side we can get $x \le \sum_{k=1}^{i}a_i + b_i$. Therefore, we can maintain the minimum value of $\sum a_i + b_j$ by segment tree.
 
+<ul>
+  <li> data to maintain: # of people alive, sum of $a_i$, minimum value of $\sum a_j+b_i$, and $b_i$ itself.
+  <li> operations:
+    <ul>
+      <li> modify a patient: similar to normal "modify" operation in usual segment tree. $O(\log n)$.
+      <li> count # of hungry people: we can count # of not-hungry people, instead. To count it, observe that if $x\le lson_a$, then all patients in the left will be satisfied. Else, all patients in the right will not be satisfied. Therefore, as every time we shrink the range to half, the complexity is $O(\log n)$.
+      <li> count # of dead people: similar to above, if $x\le lson_{mn}/rson_{mn}$, then all patients in the left/right will not die. Otherwise, some patients will die and we must keep on counting. The complexity if $O(n)$ as it is possible that all patients are killed in one operation.
+    </ul>
+</ul>
+
+Note that for type $1$ query, we must calculate # of hungry people first. Now let's calculate the complexity. Even if couning # of dead people will have $O(n)$ in the worst case, we know that the amortized complexity for it is $O(\log n)$ (Intuitively, although we can kill a lot of patients at a time, we can only add one patients at a time). Therefore, the final complexity is $n\log n(\text{insert n patients in the beginning}) + q\log n=(n+q)\log n$.
 
 <details><summary>code</summary>
 
