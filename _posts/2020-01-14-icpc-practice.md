@@ -5,7 +5,7 @@ tags: icpc gym
 
 ---
 
-This round is kinda too easy for expericened competitive programmers. I do it just for boosting my confidence (though I didn't solve all problems during virtual...). Also, I should see the scoreboard more often, as serveral trivial problems aren't discovered by me after the first hour.
+This round is kinda too easy for expericened competitive programmers. I do it just for boosting my confidence (though I didn't solve all problems during virtual...). I discovered some problems during this round, though. The first thing is that I should see the scoreboard more often, as serveral trivial problems aren't discovered by me after the first hour. Another thing is that in addition to techniques, I also need to improve my stamina to handle 5-hour duration contests. Feeling sleepy after the third hour...
 
 
 ## pA <span style="font-size:medium;">[00:02], 1 try</span>
