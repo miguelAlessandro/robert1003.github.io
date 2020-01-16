@@ -154,7 +154,7 @@ First observe that if we encode each walk with $1$/$-1$, meaning walking to the 
 
 ## pK <span style="font-size:medium;">[02:07], 2 tries</span>
 
-Enumerate all possible subset directly. The complexity is $O(n2^n)$. Be careful that the answer will overflow `int`.
+Enumerate all possible subset directly. The complexity is $O(2^n\log C)$. Be careful that the answer will overflow `int`.
 
 <details><summary>code</summary>
 
