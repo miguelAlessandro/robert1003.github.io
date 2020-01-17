@@ -34,3 +34,14 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+<script>
+  const headings = document.querySelectorAll('h2,h3');
+  const linkContent = '<span style="font-size:small;">🔗</span>';
+  for (const heading of headings) {
+    const linkIcon = document.createElement('a');
+    linkIcon.setAttribute('href', `#${heading.id}`);
+    linkIcon.innerHTML = linkContent;
+//    heading.insertBefore(linkIcon, heading.childNodes[0]); 
+    heading.appendChild(linkIcon);
+  }
+</script>
