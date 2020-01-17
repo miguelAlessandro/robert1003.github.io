@@ -209,7 +209,7 @@ You're given a tree with $N$ nodes. If we select 2 distinct nodes uniformly at r
 
 #### Problem analysis
 
-Obviously, we need to calculate number of pairs $(u, v)$ such that $dis(u, v)$ is a prime number. Again, we need to deal with all possible paths. Let's try centroid decomposition. For a centroid $u$, we can first collect the answers from the subtree, then do convolution to calculate number of paths that pass $u$. The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution part can be done in $O(N\log N)$ by fft.
+Obviously, we need to calculate number of pairs $(u, v)$ such that $dis(u, v)$ is a prime number. Again, we need to deal with all possible paths. Let's try centroid decomposition. For a centroid $u$, we can first collect the answers from the subtree, then do convolution to calculate number of paths that pass $u$.
 
 #### Problem solution
 
@@ -220,7 +220,7 @@ Do centroid decomposition on the tree. Then, for each centroid $u$, first solve 
 
 Let $1$ be the centroid. Then, the calculation will be: $(1+x)(1+x+x^2)=1+2x+2x^2+x^3$, meaning that there're $1$ path with distance $0((1,1))$ (corresponds to $1\times x^0$), $2$ paths with distance $1((1,2),(1,3))$ (corresponds to $2\times x^1$), $2$ paths with distance $2((1,4),(2,4))$  (corresponds to $2\times x^2$), and $1$ path with distance $3((2,4))$ (corresponds to $1\times x^3$).
 
-The total complexity is $O(N\log^2 N)$.
+The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution part can be done in $O(N\log N)$ by fft.
 
 ### More problems
 
