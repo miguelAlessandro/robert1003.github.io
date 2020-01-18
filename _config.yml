@@ -73,6 +73,14 @@ plugins:
  - jekyll-seo-tag
  - jekyll-sitemap
 
+# Sitemap
+defaults:
+  -
+    scope:
+      path: "assets/*"
+    values:
+      sitemap: false
+
 # Google Analytics
 google_analytics: UA-156260669-1
 
