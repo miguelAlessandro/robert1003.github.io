@@ -89,13 +89,13 @@ int sz[N], pa[N];
 int dfs(int u, int p) {
   sz[u] = 1;
   for(auto v : G[u]) if(v != p) {
-    sz[u] += sz[v];
+    sz[u] += dfs(v, u);
   }
   return sz[u];
 }
 int centroid(int u, int p, int n) {
   for(auto v : G[u]) if(v != p) {
-    if(sz[v] > n / 2) return v;
+    if(sz[v] > n / 2) return centroid(v, u, n);
   }
   return u;
 }
@@ -105,7 +105,8 @@ void build(int u, int p) {
   if(p == -1) p = c;
   pa[c] = p;
 
-  for(auto v : G[c]) {
+  vector<int> tmp(G[c].begin(), G[c].end());
+  for(auto v : tmp) {
     G[c].erase(v); G[v].erase(c);
     build(v, c);
   }
@@ -170,6 +171,14 @@ For each node $u$, we maintain a value $ans_u=\min\limits\_{v\text{ is red, } v\
 
 Both query take $O(\log N)$, as the depth of centroid tree is at most $O(\log N)$. Thus, the total complexity is $O(Q\log N)$.
 
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-01-16-centroid-decomposition/xenia-and-tree.cpp %}
+```
+
+</details>
+
 ### [IOI'11 - Race](http://wcipeg.com/problem/ioi1112)
 
 #### Problem description
@@ -201,6 +210,15 @@ Solve(u):
 
 The complexity is $(N\log N)$.
 
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-01-16-centroid-decomposition/race.cpp %}
+```
+
+</details>
+
+<!--
 ### [Codechef - Prime Distance On Tree](https://www.codechef.com/problems/PRIMEDST)
 
 #### Problem description
@@ -221,6 +239,8 @@ Do centroid decomposition on the tree. Then, for each centroid $u$, first solve 
 Let $1$ be the centroid. Then, the calculation will be: $(1+x)(1+x+x^2)=1+2x+2x^2+x^3$, meaning that there're $1$ path with distance $0((1,1))$ (corresponds to $1\times x^0$), $2$ paths with distance $1((1,2),(1,3))$ (corresponds to $2\times x^1$), $2$ paths with distance $2((1,4),(2,4))$  (corresponds to $2\times x^2$), and $1$ path with distance $3((2,4))$ (corresponds to $1\times x^3$).
 
 The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution part can be done in $O(N\log N)$ by fft.
+
+-->
 
 ### More problems
 
