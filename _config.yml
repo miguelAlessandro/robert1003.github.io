@@ -25,7 +25,7 @@ email: robert881003@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog for new year resolution.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://robert1003.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: twitter123
 #github_username:  robert1003
 show_excerpts: false # set to true to show excerpts on the homepage
