@@ -16,7 +16,6 @@ tags: icpc algorithm tree decomposition
 + [Example problems](#example-problems)
   + [CF342E - Xenia and Tree](#a-hrefhttpcodeforcescomproblemsetproblem342ecf342e---xenia-and-treea)
   + [IOI'11 - Race](#a-hrefhttpwcipegcomproblemioi1112ioi11---racea)
-  + [Codechef - Prime Distance On Tree](#a-hrefhttpswwwcodechefcomproblemsprimedstcodechef---prime-distance-on-treea)
   + [More problems](#more-problems)
 
 ## What's a centroid?
