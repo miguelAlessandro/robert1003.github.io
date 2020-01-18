@@ -16,6 +16,7 @@ tags: icpc algorithm tree decomposition
 + [Example problems](#example-problems)
   + [CF342E - Xenia and Tree](#a-hrefhttpcodeforcescomproblemsetproblem342ecf342e---xenia-and-treea)
   + [IOI'11 - Race](#a-hrefhttpwcipegcomproblemioi1112ioi11---racea)
+  + [Codechef - Prime Distance On Tree](#a-hrefhttpswwwcodechefcomproblemsprimedstcodechef---prime-distance-on-treea)
   + [More problems](#more-problems)
 
 ## What's a centroid?
@@ -217,7 +218,6 @@ The complexity is $(N\log N)$.
 
 </details>
 
-<!--
 ### [Codechef - Prime Distance On Tree](https://www.codechef.com/problems/PRIMEDST)
 
 #### Problem description
@@ -230,16 +230,17 @@ Obviously, we need to calculate number of pairs $(u, v)$ such that $dis(u, v)$ i
 
 #### Problem solution
 
-Do centroid decomposition on the tree. Then, for each centroid $u$, first solve it for children $v$, and maintain an array that record how many decendents are at each distance. Then, we can maintain the "decendent array" of $v$ be adding 1 to it. Finally, we use fft to calculate the number of paths that pass $u$ for each distance. How can this be done? Look at this example:
-
-<div style="text-align:center"><img src="/assets/images/centroid-decomposition/tree.png" style="max-height:200px"/></div>
-<br>
-
-Let $1$ be the centroid. Then, the calculation will be: $(1+x)(1+x+x^2)=1+2x+2x^2+x^3$, meaning that there're $1$ path with distance $0((1,1))$ (corresponds to $1\times x^0$), $2$ paths with distance $1((1,2),(1,3))$ (corresponds to $2\times x^1$), $2$ paths with distance $2((1,4),(2,4))$  (corresponds to $2\times x^2$), and $1$ path with distance $3((2,4))$ (corresponds to $1\times x^3$).
+Do centroid decomposition on the tree. Then, for each centroid $u$, first solve it for children $v$, and maintain an array that record how many decendents are at each distance. Then, we can maintain the "decendent array" of $v$ be adding 1 to it. Finally, we use fft to calculate the number of paths that pass $u$ for each distance. We used the fact that $2\left(\sum\_{i=1}^{n} \sum\_{j=1}^{n} x_ix_j\right) = \left(\sum\_{i=1}^{n}x_i\right)^2 - \sum\_{i=1}^{n}x_i^2$. Details are given in the code.
 
 The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution part can be done in $O(N\log N)$ by fft.
 
--->
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-01-16-centroid-decomposition/prime-distance-on-tree.cpp %}
+```
+
+</details>
 
 ### More problems
 
