@@ -71,6 +71,7 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-sitemap
 
 # Google Analytics
 google_analytics: UA-156260669-1
