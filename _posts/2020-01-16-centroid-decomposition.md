@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Introduction to Centroid Decomposition
-tags: icpc algorithm tree decomposition
+tags: icpc algorithm tree decomposition centroid-decomposition
 
 ---
 
@@ -244,7 +244,8 @@ The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution
 
 ### More problems
 
-[Here](https://codeforces.com/blog/entry/52492) is a list of problmes solvable by centroid decomposition. Have fun!
++ [Codechef - Count It](https://www.codechef.com/problems/CNTIT)
++ [Here](https://codeforces.com/blog/entry/52492) is a list of problmes solvable by centroid decomposition. Have fun!
 
 ### References
 
