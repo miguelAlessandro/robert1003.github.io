@@ -1,7 +1,7 @@
 ---
 layout: post
 title: January Cook-Off 2020 Division 1 
-tags: icpc codechef cook114 centroid-decomposition dp tree-dp fenwick-tree
+tags: icpc codechef cook114 cookoff centroid-decomposition dp tree-dp fenwick-tree
 
 ---
 
