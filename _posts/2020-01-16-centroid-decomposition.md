@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Introduction to Centroid Decomposition
-tags: icpc algorithm tree decomposition centroid-decomposition
+tags: icpc algorithm tree decomposition centroid-decomposition divide-and-conquer
 
 ---
 
