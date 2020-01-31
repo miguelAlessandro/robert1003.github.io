@@ -7,13 +7,14 @@ tags: icpc algorithm divide-and-conquer cdq
 
 ## Outline
 
-+ [What is CDQ D&C?]()
-+ [Example problems]()
-  + [ZJc571 - Three-dimensional partial order problem]()
-  + [BZOJ1176 - Mokia]()
-  + [BZOJ3295 - Dynamic Inversion Pairs]()
-  + [CF1093E - Intersection of Permutations]()
-  + [TIOJ1921 - ATM2]()
++ [What is CDQ D&C?](#what-is-cdq-dampc)
++ [Example problems](#example-problems)
+  + [ZJc571 - Three-dimensional partial order problem](#a-hrefhttpszerojudgetwshowproblemproblemidc571zjc571---three-dimensional-partial-order-problema-chinese)
+  + [BZOJ1176 - Mokia](#a-hrefhttpswwwlydsycomjudgeonlineproblemphpid1176bzoj1176---mokiaa-chinese)
+  + [BZOJ3295 - Dynamic Inversion Pairs](#a-hrefhttpswwwlydsycomjudgeonlineproblemphpid3295bzoj3295---dynamic-inversion-pairsa-chinese)
+  + [CF1093E - Intersection of Permutations](#a-hrefhttpscodeforcescomcontest1093problemecf1093e---intersection-of-permutationsa)
+  + [TIOJ1921 - ATM2](#a-hrefhttpstiojcktpedutwproblems1921tioj1921---atm2a-chinese)
+  + [More problems](#more-problems)
 
 ## What is CDQ D&C?
 
