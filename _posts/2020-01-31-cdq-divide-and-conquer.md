@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Introduction to CDQ Divide and Conquer
-tags: icpc algorithm divide-and-conquer cdq
+tags: icpc algorithm divide-and-conquer cdq offline-techniques
 
 ---
 

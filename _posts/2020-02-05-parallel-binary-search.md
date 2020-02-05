@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Introduction to Parallel Binary Search (Under construction)
-tags: icpc algorithm parallel-binary-search binary-search
+tags: icpc algorithm parallel-binary-search binary-search offline-techniques
 
 ---
 
