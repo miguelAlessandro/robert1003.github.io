@@ -3,6 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+rebuild.sh
 *.out
 *.swp
 vendor
