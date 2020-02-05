@@ -215,4 +215,5 @@ The complexity is $O(N\log N)$ as the merging part only takes $O(N)$. See detail
 ### More problems
 
 + [CF293E - Close Vertices](https://codeforces.com/contest/293/problem/E)
++ [BZOJ4836 - Binary Operation](https://www.lydsy.com/JudgeOnline/problem.php?id=4836)
 
