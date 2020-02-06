@@ -81,7 +81,7 @@ $1\le W\le 2\times 10^6, 1\le Q\le 10^4$
 
 #### Problem analysis
 
-This problem doesn't seem to have any connection to CDQ. Let try transform it. 
+This problem doesn't seem to have any connection to CDQ. Let's try to transform it. 
 
 1. the second operation can be calculated using four prefix sum. 
 2. Prefix sum is similar to partial order problem: prefix sum at $(x, y)$ is $\sum\limits\_{i\le x, j\le y}A\_{i, j}$.
