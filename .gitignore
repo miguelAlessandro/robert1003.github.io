@@ -7,3 +7,4 @@ rebuild.sh
 *.out
 *.swp
 vendor
+a.out.dSYM
