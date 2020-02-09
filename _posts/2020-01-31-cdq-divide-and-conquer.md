@@ -18,12 +18,12 @@ tags: icpc algorithm divide-and-conquer cdq offline-techniques
 
 ## What is CDQ D&C?
 
-CDQ D&C is a offline technique invented by a China competitive programmer (called CDQ, obviously). CDQ D&C is almost same to normal D&C. The biggest difference between them is that suppose we cut a interval $[l, r)$ into $[l, m), [m, r)$. In normal D&C, the elements from $[l, m)$ won't influence $[m, r)$; In CDQ D&C, elemenst from $[l, m)$ **will** influence $[m, r)$. Therefore, the framework of CDQ D&C usually looks like this.
+CDQ D&C is a offline technique invented by a China competitive programmer (called CDQ, obviously). CDQ D&C is almost same to normal D&C. The biggest difference between them is that suppose we cut a interval $\[l, r)$ into $\[l, m), \[m, r)$. In normal D&C, the elements from $\[l, m)$ won't influence $\[m, r)$; In CDQ D&C, elemenst from $\[l, m)$ **will** influence $\[m, r)$. Therefore, the framework of CDQ D&C usually looks like this.
 
-1. Divide $[l, r)$ into $[l, m), [m, r)$.
-2. Solve two subproblems $[l, m), [m, r)$.
-3. Calculate the influence of $[l, m)$ on $[m, r)$.
-4. Merge $[l, m), [m, r)$.
+1. Divide $\[l, r)$ into $\[l, m), \[m, r)$.
+2. Solve two subproblems $\[l, m), \[m, r)$.
+3. Calculate the influence of $\[l, m)$ on $\[m, r)$.
+4. Merge $\[l, m), \[m, r)$.
 
 As the introduction above might be to abstract, let's dive into problems below to get more "feeling" about it. We'll abbreviate CDQ D&C to CDQ.
 
