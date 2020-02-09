@@ -56,7 +56,7 @@ We reduce it by the following steps:
 3. Note that "calculate influence of $[l, m)$ to $[m, r)$" is a Two-dimensional partial order problem because:
     1. We only need to consider whether each element in $[l, m)$ is a part of answer of each element in $[m, r)$ or not. This implies that order of $x_i$ in $[l, m)$ is not important. 
     2. $x$ axis in $[l, m)$ is greater $[m, r)$ i.e. $\min\_{i\in [l, m)}x_i\ge \max\_{i\in [m, r)}x_i$, we successfully reduced the original problem to  Two-dimension version.
-4. Solve the Two-dimensional partial order problem by sorting $[l, r)$ with $y_i$ and [BIT]({% link _posts/2020-01-27-fenwick-tree.md %}).
+4. Solve the Two-dimensional partial order problem by sorting $[l, r)$ with $y_i$ and [BIT]({{ site.baseurl }}{% link _posts/2020-01-27-fenwick-tree.md %}).
 
 By appling [Master Theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) to $T(N)=2T(\frac{N}{2})+O(N\log N)$ we can get the complexity $O(N\log^2 N)$. There're serveral important details given in the code.
 
