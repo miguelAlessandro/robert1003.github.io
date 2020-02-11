@@ -20,9 +20,33 @@ tags: icpc algorithm segment-tree geometry
 
 ### [TIOJ1224 - Rectangle union area](https://tioj.ck.tp.edu.tw/problems/1224) (Chinese)
 
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-02-10-sweep-line-and-segment-tree/tioj-1224.cpp %}
+```
+
+</details>
+
 ### [HDU1255 - Rectangle union area 2](http://acm.hdu.edu.cn/showproblem.php?pid=1255) (Chinese)
 
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-02-10-sweep-line-and-segment-tree/hdu-1255.cpp %}
+```
+
+</details>
+
 ### [IOI '98 - Picture](https://wcipeg.com/problem/ioi9821)
+
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-02-10-sweep-line-and-segment-tree/ioi-picture.cpp %}
+```
+
+</details>
 
 ### More problems
 
