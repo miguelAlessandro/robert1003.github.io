@@ -52,3 +52,4 @@ tags: icpc algorithm segment-tree geometry
 
 + [HDU1542 - Atlantis](http://acm.hdu.edu.cn/showproblem.php?pid=1542)
 + [HDU3265 - Posters](http://acm.hdu.edu.cn/showproblem.php?pid=3265)
++ [UVa12647 - Balloon](https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4376)
