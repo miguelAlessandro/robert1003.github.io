@@ -55,7 +55,7 @@ In this case, we should replace $red$ with $blue$. But should we discard $red$? 
 
 <div style="text-align:center"><img src="/assets/images/li-chao-segment-tree/greater.png" /></div>
 
-Similarly, we shoudl keep $red$ in this node and pass $blue$ to its right son, whose corresponding interval is $\[mid, R)$.
+Similarly, we should keep $red$ in this node and pass $blue$ to its right son, whose corresponding interval is $\[mid, R)$.
 
 ```c++
 void insert(int l, int r, Line seg, int o=0) {
