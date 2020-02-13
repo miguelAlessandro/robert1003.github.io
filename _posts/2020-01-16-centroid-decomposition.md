@@ -51,7 +51,7 @@ int dfs(int u, int p) {
 }
 int centroid(int u, int p, int n) { // n is the size of tree
   for(auto v : G[u]) if(v != p) {
-    if(sz[v] > n / 2) return v;
+    if(sz[v] > n / 2) return centroid(v, u, n);
   }
   return u;
 }
