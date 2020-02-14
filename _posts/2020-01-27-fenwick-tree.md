@@ -306,6 +306,6 @@ void init() {
 }
 ```
 
-### References
+## References
 
 + [RabbitHu's blog](https://www.cnblogs.com/RabbitHu/p/BIT.html)

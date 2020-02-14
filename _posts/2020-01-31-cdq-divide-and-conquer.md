@@ -14,7 +14,7 @@ tags: icpc algorithm divide-and-conquer cdq offline-techniques
   + [BZOJ3295 - Dynamic Inversion Pairs](#a-hrefhttpswwwlydsycomjudgeonlineproblemphpid3295bzoj3295---dynamic-inversion-pairsa-chinese)
   + [CF1093E - Intersection of Permutations](#a-hrefhttpscodeforcescomcontest1093problemecf1093e---intersection-of-permutationsa)
   + [TIOJ1921 - ATM2](#a-hrefhttpstiojcktpedutwproblems1921tioj1921---atm2a-chinese)
-  + [More problems](#more-problems)
++ [More problems](#more-problems)
 
 ## What is CDQ D&C?
 
@@ -212,7 +212,7 @@ The complexity is $O(N\log N)$ as the merging part only takes $O(N)$. See detail
 
 </details>
 
-### More problems
+## More problems
 
 + [CF293E - Close Vertices](https://codeforces.com/contest/293/problem/E)
 + [BZOJ4836 - Binary Operation](https://www.lydsy.com/JudgeOnline/problem.php?id=4836)

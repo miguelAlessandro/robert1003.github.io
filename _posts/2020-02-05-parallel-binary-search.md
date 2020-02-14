@@ -11,7 +11,7 @@ tags: icpc algorithm parallel-binary-search binary-search offline-techniques
 + [Example problems](#example-problems)
   + [POI XVIII MET - Meteors](#a-hrefhttpsszkopuleduplproblemsetproblem7jrcyz7lhek4nbr5zbaxpcmmsitekeystatementpoi-xviii-met---meteorsa)
   + [HDU5412 - CRB and Queries](#a-hrefhttpacmhdueducnshowproblemphppid5412hdu5412---crb-and-queriesa)
-  + [More problems](#more-problems)
++ [More problems](#more-problems)
 
 ## What is parallel binary search?
 
@@ -108,7 +108,7 @@ Note that the events and queries are sorted by time, and all values are discreti
 
 </details>
 
-### More problems
+## More problems
 
 + [BZOJ2738 - Matrix multiplication](https://www.luogu.com.cn/problem/P1527)
 

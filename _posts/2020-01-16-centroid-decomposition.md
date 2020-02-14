@@ -17,7 +17,7 @@ tags: icpc algorithm tree decomposition centroid-decomposition divide-and-conque
   + [CF342E - Xenia and Tree](#a-hrefhttpcodeforcescomproblemsetproblem342ecf342e---xenia-and-treea)
   + [IOI'11 - Race](#a-hrefhttpwcipegcomproblemioi1112ioi11---racea)
   + [Codechef - Prime Distance On Tree](#a-hrefhttpswwwcodechefcomproblemsprimedstcodechef---prime-distance-on-treea)
-  + [More problems](#more-problems)
++ [More problems](#more-problems)
 
 ## What's a centroid?
 
@@ -242,11 +242,11 @@ The complexity will be $O(N\log N \times \log N)=O(N\log^2N)$ as the convolution
 
 </details>
 
-### More problems
+## More problems
 
 + [Codechef - Count It](https://www.codechef.com/problems/CNTIT)
 + [Here](https://codeforces.com/blog/entry/52492) is a list of problmes solvable by centroid decomposition. Have fun!
 
-### References
+## References
 
 + [Carpanese's Blog](https://medium.com/carpanese/an-illustrated-introduction-to-centroid-decomposition-8c1989d53308)

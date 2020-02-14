@@ -15,7 +15,7 @@ tags: icpc algorithm segment-tree convex-hull
   + [BZOJ1568 - Blue Mary's Company](#a-hrefhttpswwwlydsycomjudgeonlineproblemphpid1568bzoj1568---blue-marys-companya)
   + [Codechef - Polynomials](#a-hrefhttpswwwcodechefcomnov17problemspolycodechef---polynomialsa)
   + [CF923F - Escape Through Leaf](#a-hrefhttpscodeforcescomproblemsetproblem932fcf923f---escape-through-leafa)
-  + [More problems](#more-problems)
++ [More problems](#more-problems)
 
 ## What is Li-Chao Segment Tree?
 
@@ -175,7 +175,7 @@ The solution is described above. We implemented li-chao segment tree with dynami
 
 </details>
 
-### More problems
+## More problems
 
 + [CS Academy - Squared Ends](https://csacademy.com/contest/archive/task/squared-ends)
 + [BZOJ4515 - Game](https://www.lydsy.com/JudgeOnline/problem.php?id=4515)
