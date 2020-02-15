@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sweep Line and Segment Trees (Under construction)
+title: Sweep Line and Segment Trees
 tags: icpc algorithm segment-tree geometry sweep-line
 
 ---
