@@ -89,6 +89,8 @@ For implementation, we need to maintain a segment tree that can tell us how many
 
 For every node is the segment tree, we maintain two values: $tag$ and $sum$, representing "values added in that interval"(lazy tag) and "numbers of element greater than $0$" respectively. The update rule is given as following:
 
+The time complexity is $O(N\log C)$.
+
 ```cpp
 void pull(int l, int r, int o) {
   // tag[o] > 0 means that all elements in intervel [l, r) is greater than 0
@@ -144,6 +146,8 @@ void pull(int l, int r, int o) {
 }
 ```
 
+The time complexity is $O(N\log C)$.
+
 <details><summary>code</summary>
 
 ```cpp
@@ -189,6 +193,8 @@ void pull(int l, int r, int o) {
   }
 }
 ```
+
+The time complexity is again $O(N\log C)$.
 
 <details><summary>code</summary>
 
