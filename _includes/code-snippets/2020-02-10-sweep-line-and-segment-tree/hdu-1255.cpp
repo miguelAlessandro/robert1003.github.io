@@ -90,7 +90,6 @@ void solve() {
     preY = i.y;
   }
   cout << fixed << setprecision(2) << ans + eps << '\n';
-//  cout << fixed << setprecision(2) << round(ans * 100) / 100 << '\n';
 }
 
 int main() {
