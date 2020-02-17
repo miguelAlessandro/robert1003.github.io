@@ -14,7 +14,7 @@ void init() {
   }
 }
 void solve() {
-  // dp[i] = max { dp[i - 1], (cnt[i] - 1) * i + max_{j, j < i - 1} { dp[j] } }
+  // dp[i] = max { dp[i - 1], cnt[i] * i + max_{j, j < i - 1} { dp[j] } }
   dp[0] = 0;
   ll mx = 0, ans = 0;
   for(int i = 1 ; i <= c ; ++i) {

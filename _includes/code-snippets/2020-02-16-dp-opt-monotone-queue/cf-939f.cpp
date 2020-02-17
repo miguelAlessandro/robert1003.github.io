@@ -16,7 +16,7 @@ void init() {
   for(int i = 1 ; i <= k ; ++i) cin >> seg[i].l >> seg[i].r;
 }
 void solve() {
-  // dp[i][j] = min_{ 0 <= k <= r_i - l_i } { dp[i - 1][r_i - j - k] + 1, dp[i - 1][j - k] + 2 }
+  // dp[i][j] = min { dp[i - 1][j], min_{ 0 <= k <= r_i - l_i } { dp[i - 1][r_i - j - k] + 1, dp[i - 1][j - k] + 2 } }
   int cur = 1, ans = inf;
   fill(dp[0], dp[0] + n + 1, inf); dp[0][0] = 0;
   for(int i = 1 ; i <= k ; ++i) {
