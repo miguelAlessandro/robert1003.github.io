@@ -8,8 +8,11 @@ tags: icpc algorithm dp dp-optimization monotone-queue
 ## Outline
 
 + [Monotone Queue & Relation with DP](#monotone-queue)
-+ [Relation with DP]()
 + [Example problems](#example-problems)
+  + [CF1077F - Pictures with Kittens](#a-hrefhttpscodeforcescomcontest1077problemf2cf1077f---pictures-with-kittensa)
+  + [CF445A - Boredom](#a-hrefhttpscodeforcescomcontest455problemacf445a---boredoma)
+  + [CF372C - Watching Fireworks is Fun](#a-hrefhttpscodeforcescomcontest372problemccf372c---watching-fireworks-is-funa)
+  + [CF939F - Cutlet](#a-hrefhttpscodeforcescomcontest939problemfcf939f---cutleta)
 + [More problems](#more-problems)
 
 ## Monotone Queue & Relation with DP
