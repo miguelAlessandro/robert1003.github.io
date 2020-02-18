@@ -1,7 +1,7 @@
 ---
 layout: post
 title: January Lunchtime 2020 Division 1 
-tags: icpc codechef ltime80 lunchtime
+tags: icpc codechef ltime80 lunchtime under-construction
 
 ---
 
@@ -94,12 +94,6 @@ This tree tells us how to what questions to ask. For this example, we need to co
 </details>
 
 ## CCDSAP <span style="font-size:medium;">[--:--]</span>
-
-<details><summary>code</summary>
-
-```cpp
-{% include code-snippets/2020-01-26-codechef-ltime80/CCDSAP.cpp %}
-```
 
 </details>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Graph and Segment Trees (Under construction)
-tags: icpc algorithm segment-tree graph
+title: Graph and Segment Trees
+tags: icpc algorithm segment-tree graph under-construction
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DP optimization - convex hull optimization
-tags: icpc algorithm dp dp-optimization convex-hull-trick
+tags: icpc algorithm dp dp-optimization convex-hull-trick under-construction
 
 ---
 
@@ -312,10 +312,6 @@ Observe that both the slope and queries are increasing.
 
 ### [CF1179D - Fedor Runs for President](https://codeforces.com/contest/1179/problem/D)
 
-#### Problem description
-#### Problem analysis
-#### Problem solution
-
 <details><summary>code</summary>
 
 ```cpp
@@ -325,10 +321,6 @@ Observe that both the slope and queries are increasing.
 </details>
 
 ### [CF455E - Function](https://codeforces.com/contest/455/problem/E)
-
-#### Problem description
-#### Problem analysis
-#### Problem solution
 
 <details><summary>code</summary>
 
