@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Introduction to Li-Chao Segment Tree
-tags: icpc algorithm segment-tree convex-hull
+tags: icpc algorithm segment-tree convex-hull-trick
 
 ---
 
