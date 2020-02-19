@@ -1,7 +1,7 @@
 ---
 layout: post
 title: January Cook-Off 2020 Division 1 
-tags: icpc codechef cook114 cookoff centroid-decomposition dp tree-dp fenwick-tree
+tags: icpc codechef codechef-cookoff
 
 ---
 
@@ -9,7 +9,13 @@ I made A LOT of stupid mistake this round... probably because I'm too tired ><. 
 
 Contest link: [Codechef cook114 div 1](https://www.codechef.com/COOK114A)
 
-## RGAND <span style="font-size:medium;">[01:46], 4 tries</span>
++ [RGAND](#a-hrefhttpswwwcodechefcomcook114aproblemsrgandrganda-span-stylefont-sizemedium0146-4-triesspan)
++ [CHINASUM](#a-hrefhttpswwwcodechefcomcook114aproblemscfinasumcfinasuma-span-stylefont-sizemedium0211-4-triesspan)
++ [PRT](#a-hrefhttpswwwcodechefcomcook114aproblemsprtprta-span-stylefont-sizemedium-----4-triesspan)
++ [PLIND](#a-hrefhttpswwwcodechefcomcook114aproblemsplindplinda-span-stylefont-sizemedium-----0-tryspan)
++ [CNTIT](#a-hrefhttpswwwcodechefcomcook114aproblemscntitcntita-span-stylefont-sizemedium-----0-tryspan)
+
+## [RGAND](https://www.codechef.com/COOK114A/problems/RGAND) <span style="font-size:medium;">[01:46], 4 tries</span>
 
 Let $a_i=\land\_{j=L}^{j=i}=L\land L+1 \land \dots \land i$. Then, we can observe that the sequence of $a$ is non-increasing i.e. $a\_i \ge a\_{i+1}$, and every bit (in binary) of $a_i$ will only appear in a continuous segment. Therefore, we can calculate the answer bit by bit. The time complexity is $O(\log C)$. See the code for more details.
 
@@ -21,7 +27,7 @@ Let $a_i=\land\_{j=L}^{j=i}=L\land L+1 \land \dots \land i$. Then, we can observ
 
 </details>
 
-## CFINASUM <span style="font-size:medium;">[02:11], 4 tries</span>
+## [CFINASUM](https://www.codechef.com/COOK114A/problems/CFINASUM) <span style="font-size:medium;">[02:11], 4 tries</span>
 
 Let $a_i=\sum\_{j=1}^{j=i}=A_1+A_2+\dots+A_i$, the prefix sum of A. Then, if we set $A_j=0,j=1,2,\dots,N$, we can observe that only $a_j, a\_{j+1}, \dots, a_N$ will be affected. Therefore, we can maintain two sets, one for prefixes that won't be influence, another for prefixes that will be influence, and count the answer in $O(N\log N)$. See code for more details.
 
@@ -33,7 +39,7 @@ Let $a_i=\sum\_{j=1}^{j=i}=A_1+A_2+\dots+A_i$, the prefix sum of A. Then, if we 
 
 </details>
 
-## PRT <span style="font-size:medium;">[--:--], 4 tries</span>
+## [PRT](https://www.codechef.com/COOK114A/problems/PRT) <span style="font-size:medium;">[--:--], 4 tries</span>
 
 I solved this problem during contest, however, make some stupid bugs (overflow) and can't find it before the contest ends...
 This problem is a simple tree dp. The original problem wants us to find a best assignment of $A_1, A_2, \dots, A_N$ to vertices $1, 2, \dots, N$ such that $\sum\_{i=1}^{N}A_i\times \text{# of leaf paths that pass vertex } i$ is maximized. Let $c_i$ be # of leaf paths that pass vertex $i$. Then if we know the values of $c_i$, we can assign large $A_i$ to nodes with large $c_i$. To calculate $c_i$, we first calculate number of leaves in subtree $i$, $l_i$. Then, we calculate $c_i$ with another dfs (details are in the code). Note that we need to handle $N=1, 2$ seperately.
@@ -46,7 +52,7 @@ This problem is a simple tree dp. The original problem wants us to find a best a
 
 </details>
 
-## PLIND <span style="font-size:medium;">[--:--], 0 try</span>
+## [PLIND](https://www.codechef.com/COOK114A/problems/PLIND) <span style="font-size:medium;">[--:--], 0 try</span>
 
 In my opinion, this problem is the most difficult problem in this contest (though more people solve this than the next problem). First, we can observe that given $[L, R]$, we can solve it by calculating $[1, R], [1, L - 1]$ and subtract them. Now, given $X$, how do we solve $[1, X]$? Suppose we fill the number one by one starting from the largest digit. Let $dp[i][j][k]$ represent the number of ways to fill the question marks in $S_1S_2...S\_{i-1}??.??$, where we've already fill $S_1S_2...S\_{i-1}$ with some values and there are $j$ digits occuring odd number of times in $S_1S_2...S\_{i-1}$. Finally, $k$ represent whether $S_1S_2...S\_{i-1}$ is less then $X_1X_2...X\_{i-1}$ or not. Let $odd_i$ be number of digits that occur odd number of times in $X_1X_2...X_i$, and $small_i$ be number of digits that is smaller than $X_i$ and occur odd number of times in $X_1X_2...X\_{i-1}$. Then, the transition of dp will be:
 
@@ -77,7 +83,7 @@ The answer for $[1,X]$ is $dp[2][1][0]+(X_1-1)\times dp[2][1][1]+\sum\_{i=1}^{le
 
 </details>
 
-## CNTIT <span style="font-size:medium;">[--:--], 0 try</span>
+## [CNTIT](https://www.codechef.com/COOK114A/problems/CNTIT) <span style="font-size:medium;">[--:--], 0 try</span>
 
 To solve this problem, we need several observations:
 
