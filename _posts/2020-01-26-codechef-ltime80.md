@@ -1,14 +1,19 @@
 ---
 layout: post
 title: January Lunchtime 2020 Division 1 
-tags: icpc codechef ltime80 lunchtime under-construction
+tags: icpc codechef codechef-lunchtime under-construction
 
 ---
 
-
 Contest link: [Codechef ltime80 div 1](https://www.codechef.com/LTIME80A)
 
-## POPTUNNL <span style="font-size:medium;">[00:22]</span>
++ [POPTUNNL](#a-hrefhttpswwwcodechefcomltime80aproblemspoptunnlpoptunnla-span-stylefont-sizemedium0022span)
++ [CARR](#a-hrefhttpswwwcodechefcomltime80aproblemscarrcarra-span-stylefont-sizemedium0146span)
++ [PAPER](#a-hrefhttpswwwcodechefcomltime80aproblemspaperpapera-span-stylefont-sizemedium0240span)
++ [MINMAXIN](#a-hrefhttpswwwcodechefcomltime80aproblemsminmaxinminmaxina-span-stylefont-sizemedium----span)
++ [CCDSAP](#a-hrefhttpswwwcodechefcomltime80aproblemsccdsapccdsapa-span-stylefont-sizemedium----span)
+
+## [POPTUNNL](https://www.codechef.com/LTIME80A/problems/POPTUNNL) <span style="font-size:medium;">[00:22]</span>
 
 We can build a directed graph and do a simple BFS on it. Be careful that for tile $i$, only tile $j, i-k\le j \le i+k$ can be considered.
 
@@ -20,7 +25,7 @@ We can build a directed graph and do a simple BFS on it. Be careful that for til
 
 </details>
 
-## CARR <span style="font-size:medium;">[01:46]</span>
+## [CARR](https://www.codechef.com/LTIME80A/problems/CARR) <span style="font-size:medium;">[01:46]</span>
 
 Let $dp_i$ be the number of required sequence with length $i$. Then, $dp_0=1, dp_1=M, dp_i=(M-1)\times dp\_{i - 1} + (M-1)\times dp\_{i - 2}$. We need to calculate $dp_N$. For the first subtask, we can do it naively in $O(N)$. For the second subtask, first observe that the transition can be written in matrix form:
 $$
@@ -61,7 +66,7 @@ The second term can be done with fast matrix exponentiation in $O(2^3\log N)$.
 
 </details>
 
-## PAPER <span style="font-size:medium;">[02:40]</span>
+## [PAPER](https://www.codechef.com/LTIME80A/problems/PAPER) <span style="font-size:medium;">[02:40]</span>
 
 First, let $ans2$ be the shortest distance between the initial $M$ points. Observe that when we unfold a paper, the distance shorter than $ans2$ will only appears at the edge that we unfolded. Therefore, we can first do discretization on both $x$ and $y$ axis, and maintain the points that is closest to edges on the top, bottom, left and right. Refer to the code for more details.
 
@@ -76,7 +81,9 @@ First, let $ans2$ be the shortest distance between the initial $M$ points. Obser
 
 </details>
 
-## MINMAXIN <span style="font-size:medium;">[--:--]</span>
+## [MINMAXIN](https://www.codechef.com/LTIME80A/problems/MINMAXIN) <span style="font-size:medium;">[--:--]</span>
+
+As I've heard this question before, I should've solved this problem...gotta improve my implementation skills :/
 
 We can build a "compare tree" for this problem. For example, suppose that $N=4$, then the compare tree looks like this:
 
@@ -93,7 +100,7 @@ This tree tells us how to what questions to ask. For this example, we need to co
 
 </details>
 
-## CCDSAP <span style="font-size:medium;">[--:--]</span>
+## [CCDSAP](https://www.codechef.com/LTIME80A/problems/CCDSAP) <span style="font-size:medium;">[--:--]</span>
 
 </details>
 
