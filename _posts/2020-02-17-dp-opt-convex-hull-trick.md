@@ -312,6 +312,15 @@ Observe that both the slope and queries are increasing.
 
 ### [CF1179D - Fedor Runs for President](https://codeforces.com/contest/1179/problem/D)
 
+#### Problem description
+
+You're given a tree of size $N$, and you can add an extra edge to that tree. Please maximize the number of different simple paths. A simple path is a path which goes through every vertex no more than once. Two simple paths are named distinct if sets of their edges are distinct.
+
+$2\le N\le 5\times 10^5$
+
+#### Problem description
+#### Problem solution
+
 <details><summary>code</summary>
 
 ```cpp
@@ -321,6 +330,44 @@ Observe that both the slope and queries are increasing.
 </details>
 
 ### [CF455E - Function](https://codeforces.com/contest/455/problem/E)
+
+#### Problem description
+
+You're given a function an array $a$ with length $N$ and a function $f$ which is defined recursively:
+
+$$
+f(i, j)= a[j] + 
+\begin{cases}
+  0 &, i=1 \\\\
+  \min \left\\\{ f(i-1, j), f(i-1, j-1) \right\\\} &, 2\le i\le N
+\end{cases}
+$$
+
+Now, you're given $Q$ queries $(x_i, y_i), x_i \le y_i$. Please calculate $f(x_i, y_i)$.
+
+$1\le N\le 10^5, 0\le a_i\le 10^4, 1\le Q\le 10^5, 1\le x_i\le y_i \le N$
+
+#### Problem analysis
+
+First, the function can be transform into another problem: A query $(i, j)$ means that you are standing at $j$ initially and need to make $i$ moves. In every move, you can choose to stay at the same place or move one step left, and pay cost corresponding to the position you stand. You need to minimize your cost.
+
+After this transformation, the function can be calculate by $f(i, j)=\min\_{j-i+1 \le k \le j} \left(\sum\_{l=k}^{j} a_l\cdot cnt_l\right)$, where $cnt_l$ represents how many times we visit $a_l$. If you look carefully at this function, then you might observe that if we're ending at some $k$, then $a_k$ must equals to $\min\_{k\le l\le j} a_l$ otherwise we can stop eariler to obtain a better cost. This means that we can get the best cost the we always walk to the end directly and stay there till the end. The corresponding cost will be $sum_j - sum_k + a_k\cdot(i-j+k)$, where $sum_i$ is the prefix sum of $a$.
+
+Now, let's try to rewrite the cost:
+$$
+\begin{align*}
+sum_j-sum_k+a_k\cdot(i-j+k) &= sum_j + (a_k\cdot (i - j) + a_k\cdot k - sum_k)
+\end{align*}
+$$
+If we let $m_k=a_k, x=(i-j), b_k=a_k\cdot k - sum_k$, then we got a line $m_kx+b_k$ (again!). Note that $f(i, j)$ can be written as:
+$$
+f(i, j)=\min\_{j-i+1 \le k \le j} m_k(i-j)+b_k
+$$
+Therefore, we can solve it by CHT. 
+
+#### Problem solution
+
+You might wonder: "The length of query depends on $i$ and $j$, how do I handle this?". This can be solved with segment trees. Specifically, we open a CHT on every node of the segment tree, which contains lines that belongs to that segment ($l\le k\lt r$). See code for more details. The time complexity is $O(N\log^2 N)$.
 
 <details><summary>code</summary>
 
