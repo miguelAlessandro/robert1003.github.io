@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DP optimization - monotone-queue optimization
+title: DP optimization - Monotone-Queue Optimization
 tags: icpc algorithm dp dp-optimization monotone-queue
 
 ---

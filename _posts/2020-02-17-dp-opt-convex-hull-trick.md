@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DP optimization - convex hull optimization
+title: DP optimization - Convex Hull Optimization
 tags: icpc algorithm dp dp-optimization convex-hull-trick under-construction
 
 ---
