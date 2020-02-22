@@ -19,8 +19,8 @@ Contest link: [Codechef feb20 div 1](https://www.codechef.com/FEB20A)
 
 The pseudocode is given as below:
 
-+ If $D_i \nmid P$, then print $\left\\\{ \lceil \frac{P}{D_i} \rceil \right\\\}$
-+ If for some $k, i, j$ exists such that $p-k\cdot D_j \mid D_i$ and $p\gt k\cdot D_j$, then print $\left\\\{ D_i, \lceil \frac{p-k\cdot D_j}{D_i} \rceil \right\\\}$
++ If $D_i \nmid P$, then print $\left\\\{ 1\times \lceil\frac{P}{D_i} \rceil \right\\\}$
++ If for some $k, i, j$ exists such that $p-k\cdot D_j \mid D_i$ and $p\gt k\cdot D_j$, then print $\left\\\{ k\times D_j, \lceil \frac{p-k\cdot D_j}{D_i} \rceil\times D_i \right\\\}$
 + Otherwise, no solution
 
 The time complexity is $O(N^2)$. Note that $O(N)$ solution exists and is described in the official editorial.
