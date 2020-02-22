@@ -58,10 +58,27 @@ Then, as we want to minimize the difference between them, we can choose a $j$ su
 
 ## [CHFDIV](https://www.codechef.com/COOK115A/problems/CHFDIV) <span style="font-size:medium;">[02:12], 3 tries</span>
 
+Let's consider the prime factorization of the answer ($p$ is a prime):
+
++ $p \mid k$ : This implies that $p$ can't divide any elements when $A=p+1$, thus $p$ is not in $X$.
++ $p \nmid k$ : As $p$ and $k$ are coprimes, the result of $(A+iK)\mod p$ will have a cycle with length $p$. Thus, for each $p^i, i=1, 2, \dots$ elements there will be $1$ elements divisible by $p$.
+
+So we can preprocess all primes between $1\sim 10^6$ and find those factor respectively.
+
 <details><summary>code</summary>
 
 ```cpp
 {% include code-snippets/2020-02-21-codechef-cook115/CHFDIV.cpp %}
+```
+
+</details>
+
+The solution above didn't come to my head during contest. My approach during the contest is given below (I used a faster version of gcd and it passed with 0.99 second! So close...).
+
+<details><summary>code</summary>
+
+```cpp
+{% include code-snippets/2020-02-21-codechef-cook115/CHFDIV-2.cpp %}
 ```
 
 </details>
